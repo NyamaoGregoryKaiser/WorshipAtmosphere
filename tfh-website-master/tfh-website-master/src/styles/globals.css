@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  scroll-behavior: smooth !important;
+  overflow-x: hidden;
+  color: #000000;
+}
+
+* {
+  line-height: normal !important;
+}
+
+/* Input styles */
+.inputContainer {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  position: relative;
+}
+
+.inputContainer>label {
+  font-size: 1.02038125rem;
+  font-weight: 400;
+  color: #002F72;
+}
+
+.formContainer>h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 59.87px;
+  /* margin-bottom: 9px; */
+}
+
+.inputContainer>* input,
+textarea {
+  padding-block: 16px;
+  padding-inline: 12px;
+  font-size: 1.02038125rem;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #0D57BE;
+  border-radius: 5px;
+  width: 100%;
+  color: #000
+}
+
+.inputContainer>* input:focus,
+textarea:focus {
+  border: 1px solid #002F72 !important;
+  outline: 1px solid #002F72 !important;
+}
+
+.inputContainer>* input::placeholder,
+textarea::placeholder {
+  color: #CFCFCF;
+  font-style: italic;
+}
+
+.inputError {
+  border: 1px solid #F13637 !important;
+}
+
+.error {
+  color: #F13637;
+  font-size: 0.75rem;
+}
+
+.errorText {
+  color: #F13637;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scroll-bar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
